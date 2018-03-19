@@ -19,7 +19,7 @@ public class GroupMain extends AppCompatActivity implements View.OnClickListener
     //  그룹원마다 클릭리스너
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.group_main);
 
         //  클릭한 그룹이름 가져와서 쿼리
         String groupName = "3학년 A반";

@@ -15,7 +15,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
 
         createGroup = (Button)findViewById(R.id.createGroup);
         createGroup.setOnClickListener(this);
