@@ -1,7 +1,6 @@
 package com.example.skadl.professortest;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,10 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-/**
- * Created by skadl on 2018-03-13.
- */
 
 public class Main extends AppCompatActivity implements View.OnClickListener {
 

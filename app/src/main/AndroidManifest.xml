@@ -19,6 +19,12 @@
         <activity android:name=".Main"/>
         <activity android:name=".Join"/>
         <activity android:name=".GroupMain"/>
+        <activity android:name=".FeedbackList" />
+        <activity android:name=".FeedbackView" />
+        <activity android:name=".GroupRecord" />
+        <activity android:name=".Note" />
+        <activity android:name=".Retest" />
+        <activity android:name=".studentRecord" />
     </application>
 
 </manifest>

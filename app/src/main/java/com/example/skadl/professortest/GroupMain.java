@@ -9,11 +9,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-
-/**
- * Created by skadl on 2018-03-15.
- */
-
 public class GroupMain extends AppCompatActivity implements View.OnClickListener {
 
     private TextView groupNameView, numOfStd;
@@ -56,15 +51,20 @@ public class GroupMain extends AppCompatActivity implements View.OnClickListener
             //  +이미지 버튼, 그룹원 수동 추가
             addStudentDialog();
 
-        }else if(false){
-            //  학생 프로필 클릭 창 클릭의 경우
+        }/*else if(false){
+            //  학생 프로필 터치
+            //  삭제하기 실행 시
             String name = "성형석";
             deleteStudentDialog(name);
 
-        }else if(view.getId() == R.id.createGroup){
-            //  성적 확인 창으로 이동
 
-        }
+            //  기본
+            //  학생 성적 확인으로 이동
+
+        }else if(view.getId() == R.id.createGroup){
+            //  그룹 생성 으로 이동
+
+        }*/
     }
 
     private void deleteStudentDialog(String stdName){
