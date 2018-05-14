@@ -9,14 +9,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class GroupRecord extends AppCompatActivity implements View.OnClickListener {
+public class GroupInfo extends AppCompatActivity implements View.OnClickListener {
 
     private TextView name;
     private String sessionNum, profNum, groupName;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.group_record);
+        setContentView(R.layout.group_info);
 
         Intent getInfo = getIntent();
 
@@ -51,15 +51,17 @@ public class GroupRecord extends AppCompatActivity implements View.OnClickListen
     }
 
     public void onClick(View view) {
+
         View parentView = (View)view.getParent();
         TextView studentInfo = (TextView)parentView.findViewById(R.id.student_name);
         //String position = (String)parentView.getTag();
 
-        Intent intent = new Intent(GroupRecord.this, StudentGrade.class);
+        Intent intent = new Intent(GroupInfo.this, StudentGrade.class);
 
         intent.putExtra("student_name", studentInfo.getText().toString());
         intent.putExtra("session_num", sessionNum);
         intent.putExtra("professor_name", profNum);
         startActivity(intent);
     }
+
 }

@@ -12,6 +12,8 @@ public class StudentListItem {
     public Drawable studentImage;
     public String studentName;
     public String studentGrade;
+    //  학생 정보
+
     public View.OnClickListener onClickListener;
 
 }

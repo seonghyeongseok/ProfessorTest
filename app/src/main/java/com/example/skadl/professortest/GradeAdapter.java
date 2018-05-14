@@ -5,23 +5,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 /**
- * Created by skadl on 2018-05-10.
+ * Created by skadl on 2018-05-11.
  */
 
-public class StudentListAdapter extends BaseAdapter {
+public class GradeAdapter extends BaseAdapter {
 
     LayoutInflater inflater = null;
-    private ArrayList<StudentListItem> studentList = null;
+    private ArrayList<GradeItem> gradeList = null;
     private int listSize = 0;
 
-    public StudentListAdapter(ArrayList<StudentListItem> list) {
-        studentList = list;
+    public GradeAdapter(ArrayList<GradeItem> list) {
+        gradeList = list;
         listSize = list.size();
     }
 
@@ -55,21 +54,23 @@ public class StudentListAdapter extends BaseAdapter {
 
             }
 
-            view = inflater.inflate(R.layout.student_list_item, viewGroup, false);
+            view = inflater.inflate(R.layout.grade_item, viewGroup, false);
         }
 
-        TextView studentName = (TextView)view.findViewById(R.id.student_name);
-        TextView studentGrade = (TextView)view.findViewById(R.id.grade);
+        TextView date = (TextView)view.findViewById(R.id.date);
+        TextView quizName = (TextView)view.findViewById(R.id.quiz_name);
+        TextView grade = (TextView)view.findViewById(R.id.grade);
+        TextView note = (TextView)view.findViewById(R.id.note);
+        TextView retest = (TextView)view.findViewById(R.id.retest);
 
-        studentName.setText(studentList.get(i).studentName);
-        studentGrade.setText(studentList.get(i).studentGrade);
-
-        studentName.setOnClickListener(studentList.get(i).onClickListener);
-        studentGrade.setOnClickListener(studentList.get(i).onClickListener);
+        date.setText(gradeList.get(i).date);
+        quizName.setText(gradeList.get(i).quizName);
+        grade.setText(gradeList.get(i).grade);
+        note.setText(gradeList.get(i).note);
+        retest.setText(gradeList.get(i).retest);
 
         view.setTag(""+i);
 
         return view;
     }
-    //  학생 정보 설정
 }

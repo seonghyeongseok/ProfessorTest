@@ -18,7 +18,6 @@ public class FeedbackList extends AppCompatActivity implements View.OnClickListe
         String gName = "3학년C반";
         groupName.setText(gName);
 
-
         //  학생 질문 리스트
         //  게시판 참고
         //  최근 1주, 최근 한달 기준으로

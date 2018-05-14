@@ -35,9 +35,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-/*
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();*/
 
         final Context context = this;
 

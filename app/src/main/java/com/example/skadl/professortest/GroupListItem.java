@@ -11,6 +11,8 @@ public class GroupListItem {
 
     public Drawable classImage;
     public String className;
+    //  클래스 정보
+
     public View.OnClickListener onClickListener;
 
 }

@@ -21,7 +21,7 @@
         <activity android:name=".StudentGrade"/>
         <activity android:name=".FeedbackList" />
         <activity android:name=".FeedbackView" />
-        <activity android:name=".GroupRecord" />
+        <activity android:name=".GroupInfo" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

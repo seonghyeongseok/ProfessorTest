@@ -20,8 +20,7 @@ public class GroupListAdapter extends BaseAdapter {
     private ArrayList<GroupListItem> classList = null;
     private int listSize = 0;
 
-    public GroupListAdapter(ArrayList<GroupListItem> list)
-    {
+    public GroupListAdapter(ArrayList<GroupListItem> list) {
         classList = list;
         listSize = list.size();
     }
@@ -30,6 +29,7 @@ public class GroupListAdapter extends BaseAdapter {
     public int getCount() {
         return listSize;
     }
+    //  담당 클래스 개수
 
     @Override
     public Object getItem(int i) {
@@ -63,4 +63,6 @@ public class GroupListAdapter extends BaseAdapter {
         view.setTag(""+i);
         return view;
     }
+    //  클래스 정보 설정
+
 }
