@@ -8,15 +8,11 @@ import android.widget.TextView;
 
 public class FeedbackList extends AppCompatActivity implements View.OnClickListener{
 
-    private TextView groupName;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.feedback_list);
 
-        groupName = (TextView)findViewById(R.id.groupName);
-        String gName = "3학년C반";
-        groupName.setText(gName);
 
         //  학생 질문 리스트
         //  게시판 참고
